@@ -11,43 +11,63 @@
     <title>Watch Template</title>
 
     <!-- Style CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
+<!--Page Loader-->
+<div id="preloader">
+    <div class="loader">
+    </div>
+</div>
+<header id="header">
+    <div class="container">
+        <div class="header_area d-nfone d-lg-blofck">
+            <div class="align-items-center d-flex justify-content-between">
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul class="d-flex">
+                            <li class="nav-item active"><a href="#hero">Home</a> </li>
+                            <li class="nav-item"><a href="#faq">FAQ</a></li>
+                            <li class="nav-item"><a href="#princing">Pricing</a></li>
+                            <li class="nav-item"><a href="#blog">Blog</a></li>
+                            <li class="nav-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <a href="#hero">A</a>
+                    </div>
+                    <div class="navbar-right mr-5 mr-lg-0">
+                        <form class="form-inline my-lg-0">
+                            <button class="btn login_btn" type="submit">Login</button>
+                            <button class="btn signup_btn" type="submit">Signup</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    
 
-<header id="home">
-	<div class="container">
-		<div class="header_area">
-			<div class="header_area_inner">
-				<div class="container-fluid">
-					<nav class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand d-block d-lg-none" href="#">A</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarContent">
-							<ul class="navbar-nav mr-auto nav-item">
-								<li><a class="active" href="#">How it works</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Pricing</a></li>
-							</ul>
-							<a class="navbar-brand d-none d-lg-block" href="#">A</a>
-							<form class="form-inline my-2 my-lg-0">
-							  <button class="btn login_btn" type="submit">Login</button>
-							  <button class="btn signup_btn" type="submit">Signup</button>
-							</form>
-					  </div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
+          <button class="navbar-btn d-lg-none" type="button">
+                            <span class="fa fa-bars"></span>
+                        </button>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#faq">FAQ</a> </li>
+            <li><a href="#princing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a> </li>
+        </ul>
+    </div>
+    </div>
+
 </header>
-
 <!-------------------START SLIDER AREA------------------->
-<section class="slider-area">
+<section id="hero" class="slider-area p-0">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -62,7 +82,6 @@
 	</div>
 </section>
 <!-------------------END SLIDER AREA------------------->
-
 <!-------------------START SERVICES AREA------------------->
 <section class="services-area">
 	<div class="container">
@@ -119,10 +138,8 @@
 	</div>
 </section>
 <!-------------------END SERVICES AREA------------------->
-
-
 <!-------------------START WORKS AREA------------------->
-<section class="works-area">
+<section id="works" class="works-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -132,12 +149,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="works_inner">
+		<div class="works_inner" data-aos="fade-left">
 			<div class="theme_video">
 				<div class="video_overlay"></div>
-				<img src="images/video-bg.jpg" alt="">
-				<div class="video_icon">
-					<a href="#"><i class="fa fa-play" data-toggle="modal" data-target="#myModal"></i></a>
+				    <img src="images/video-bg.jpg" alt="">
+				<div class="video_icon" data-toggle="modal" data-target="#myModal">
+					<a href="#" ><i class="fa fa-play"></i></a>
 				</div>
 				<!--Video Popup-->
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
@@ -163,9 +180,7 @@
 
 </section>
 <!-------------------END WORKS AREA------------------->
-
-
-<!-------------------START TESTMONIALS AREA------------------->
+<!-------------------START CLIENTS FEEDBACK AREA------------------->
 <section class="clients-feedback-area">
 	<div class="container">
 		<div class="row">
@@ -175,13 +190,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" data-aos="fade-right">
 			<div class="col-md-12">
 				<div class="feedback-slider">
 					<!-- Client Feedback Text  -->
                         <div class="client-feedback-text d-flex">
                            <div class="client_photo">
-                           		<div class="client_photo_overlay"></div>
 								<img src="images/video-bg.jpg" alt="">
 							</div>
                             <div class="client">
@@ -201,7 +215,6 @@
                         <!-- Client Feedback Text  -->
                         <div class="client-feedback-text d-flex">
                            <div class="client_photo">
-                           		<div class="client_photo_overlay"></div>
 								<img src="images/video-bg.jpg" alt="">
 							</div>
                             <div class="client">
@@ -221,7 +234,6 @@
                         <!-- Client Feedback Text  -->
                         <div class="client-feedback-text d-flex">
                            <div class="client_photo">
-                           		<div class="client_photo_overlay"></div>
 								<img src="images/video-bg.jpg" alt="">
 							</div>
                             <div class="client">
@@ -243,12 +255,9 @@
 		</div>
 	</div>
 </section>
-<!-------------------END TESTMONIALS AREA------------------->
-
-
-
+<!-------------------END CLIENTS FEEDBACK AREA------------------->
 <!-------------------START LOOKS AREA------------------->
-<section class="looks-area padding-50">
+<section class="looks-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -257,7 +266,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="looks_inner">
+		<div class="looks_inner" data-aos="fade-left">
 			<div class="screenshort-slider">
                 <div class="img">
                     <img src="images/01-2.png" alt="">
@@ -282,10 +291,8 @@
 	</div>
 </section>
 <!-------------------END LOOKS AREA------------------->
-
-
 <!-------------------START FAQ AREA------------------->
-<section class="faq-area">
+<section id="faq" class="faq-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -304,9 +311,9 @@
 
 						<!-- Card header -->
 						<div class="card-header" role="tab" id="headingOne1">
-							<a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
 								<h5 class="mb-0">
-									Is this app available for smartwatch?<i class="fa fa-angle-right rotate-icon"></i>
+									Is this app available for smartwatch?
 								</h5>
 							</a>
 						</div>
@@ -326,8 +333,8 @@
 
 						<!-- Card header -->
 						<div class="card-header" role="tab" id="headingTwo2">
-							<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-								<h5 class="mb-0">How can I download the app?<i class="fa fa-angle-right rotate-icon"></i>
+							<a data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+								<h5 class="mb-0">How can I download the app?
 								</h5>
 							</a>
 						</div>
@@ -349,7 +356,7 @@
 						<div class="card-header" role="tab" id="headingThree3">
 							<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
 								<h5 class="mb-0">
-									Can i use it for my personal use?<i class="fa fa-angle-right rotate-icon"></i>
+									Can i use it for my personal use?
 								</h5>
 							</a>
 						</div>
@@ -370,7 +377,7 @@
 						<div class="card-header" role="tab" id="headingThree4">
 							<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree3">
 								<h5 class="mb-0">
-									Can i use it for my personal use?<i class="fa fa-angle-right"></i>
+									Can i use it for my personal use?
 								</h5>
 							</a>
 						</div>
@@ -389,7 +396,7 @@
 				<!-- Accordion wrapper -->
 
 			</div>
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-6 col-sm-12 mt-4 mt-md-0">
 				<div class="faq_right_img">
 					<img src="images/watch.png" alt="">
 				</div>
@@ -399,10 +406,8 @@
 
 </section>
 <!-------------------END FAQ AREA------------------->
-
-
 <!-------------------START DOWNLOAD AREA------------------->
-<section class="padding-50 download-area">
+<section class="download-area">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-6 col-md-10 col-sm-12">
@@ -431,10 +436,8 @@
 	</div>
 </section>
 <!-------------------END DOWNLOAD AREA------------------->
-
-
 <!-------------------START PLAN AREA------------------->
-<section class="plan-area">
+<section id="princing" class="plan-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -474,7 +477,7 @@
 					<button class="btn plan_btn">Sign Up</button>
 				</div>
 			</div>
-			<div class="col-lg-4  col-md-6 col-sm-10">
+			<div class="col-lg-4  col-md-6 col-sm-10 mt-4 mt-md-0">
 				<div class="plan_item">
 					<div class="plan_heading">
 						<h4>STARTER</h4>
@@ -503,7 +506,7 @@
 					<button class="btn plan_btn">Sign Up</button>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-10">
+			<div class="col-lg-4 col-md-6 col-sm-10 mt-4 mt-lg-0">
 				<div class="plan_item">
 					<div class="plan_heading">
 						<h4>STARTER</h4>
@@ -536,9 +539,8 @@
 	</div>
 </section>
 <!-------------------END PLAN AREA------------------->
-
 <!-------------------START BLOG AREA------------------->
-<section class="blog-area">
+<section id="blog" class="blog-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -555,14 +557,14 @@
 					<p class="blog_des">>Out perceive have tone a on a quitting their spineless, focus leave stupid. Skyline cache effectiveness country, maintain around presence right, a is themselves</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-4 mt-md-0">
 				<div class="blog_item">
 					<p>On Dec 16, 2022 by <a href="#">Admin</a></p>
 					<a href="#"><h4>Physics took past experiments on evaluate now, sort hand, attained</h4></a>
 					<p class="blog_des">Out perceive have tone a on a quitting their spineless, focus leave stupid. Skyline cache effectiveness country, maintain around presence right, a is themselves</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-4 mt-lg-0">
 				<div class="blog_item">
 					<p>>On Dec 16, 2022 by <a href="#">Admin</a></p>
 					<a href="#"><h4>Physics took past experiments on evaluate now, sort hand, attained</h4></a>
@@ -580,9 +582,8 @@
 	</div>
 </section>
 <!-------------------END BLOG AREA------------------->
-
 <!-------------------START CONTACT AREA------------------->
-<section class="contact-area">
+<section id="contact" class="contact-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -618,7 +619,7 @@
 						</form>
 					</div>
 				</div>
-			<div class="col-lg-9 col-md-12 col-sm-12">
+			<div class="col-lg-9 col-md-12 col-sm-12 mt-3 mt-lg-0">
 				<div class="contact_link">
 					<a href="#"><i class="">@</i>info@email.com</a>
 					<a href="#"><i class="fa fa-phone-volume"></i>123-456-7890</a>
@@ -640,14 +641,12 @@
 	</div>
 </section>
 <!-------------------END CONTACT AREA------------------->
-
-
 <footer>
 	<div class="footer_top">
 		<div class="container">
 			<div class="footer_top_inner">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-lg-6 col-md-7 col-sm-6">
+				<div class="row justify-content-md-between align-items-center justify-content-center">
+					<div class="col-lg-6 col-md-7 col-sm-12">
 						<div class="footer footer_link">
 							<a href="#" class="download_button">
 								<i class="fa fa-android"></i>
@@ -659,8 +658,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-5 col-sm-6">
-						<div class="footer footer_nav float-right">
+					<div class="col-lg-6 col-md-5 col-sm-12 mt-4 mt-md-0">
+						<div class="footer footer_nav float-none float-md-right">
 								<a href="#">Home</a>
 								<a href="#">Testimonials</a>
 								<a href="#">Plans</a>
@@ -691,16 +690,16 @@
 		</div>
 	</div>
 </footer>
-	<button id="topbtn" onclick="topFunction()"><i class="icofont-long-arrow-up"></i></button>
+	<button id="topbtn" onclick="topFunction()"><i class="fa fa-long-arrow-up"></i></button>
     <!-- JavaScript Plugins -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <script src="js/slick.min.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
     <!-- Main js -->
     <script src="js/main.js"></script>
-
 
 </body>
 
