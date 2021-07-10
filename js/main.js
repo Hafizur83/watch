@@ -1,18 +1,33 @@
 
 	$(document).ready(function(){
+		// jQuery preloader
+    $(window).on('load', function(){
+        $('#preloader').fadeOut(2000)
+    })
+        
 	//STICKY MENU
 		var topbutton = document.getElementById("topbtn");
 		window.onscroll = function(){scrollFunction()};
 		function scrollFunction(){
 			if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
-				$("nav").addClass("sticky");
+				$("#header").addClass("sticky");
 				topbutton.style.display = "block";
 				
 			}else{
-				$("nav").removeClass("sticky");
+				$("#header").removeClass("sticky");
 				topbutton.style.display = "none";
 			}
 		}
+		
+        //  Mobile Menu
+   $(document).on('click','.navbar-btn , .mobile-menu li a',function(){
+       if($('#header').hasClass("mobile-nav-active")){
+            $('#header').removeClass('mobile-nav-active')
+       }else{
+           $('#header').addClass('mobile-nav-active')
+       }
+    });
+        
 $('.screenshort-slider').slick({
   dots: true,
   infinite: true,
@@ -75,8 +90,9 @@ $('.screenshort-slider').slick({
             nextArrow: '<i class="fa fa-arrow-right"></i>'
 			});
 });
-
-
+//   Smooth Scroll Script
+    $('#header a').smoothScroll();
+	
 //SCROLL TO TOP
 	function topFunction(){
 			window.scrollTo({top: 0, behavior:"smooth"});
