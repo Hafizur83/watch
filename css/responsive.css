@@ -1,14 +1,9 @@
 
-@media (min-width:1200px) and (max-width: 1440px){
-	.sticky{
-		padding: 0px 170px;
-	}
+@media (max-width:1200px){
+    
 }
 
 @media (min-width:992px) and (max-width: 1199px){
-	.sticky{
-		padding: 0px 70px;
-	}
 	.plan_item {
 		padding: 45px 45px;
 	}
@@ -19,25 +14,13 @@
 		top: 29px;
 		left: 16px;
 	}
-	.footer_nav a:nth-child(1){
-		margin-left: 0;
-	}
 }
 @media (min-width:768px) and (max-width: 991px){
-	.sticky{
-		padding: 0px 100px;
-	}
-	.nav-item li a.active{
+	.nav-item a.active{
 		margin-left: 30px;
 	}
 	.navbar-collapse {
 		display: flex;
-	}
-	.col-md-6, .col-md-12{
-		margin-bottom: 35px;
-	}
-	.col-md-6:last-child, .col-md-12:last-child{
-		margin-bottom: 0px;
 	}
 	.single_services {
 		padding: 49px 30px 45px 30px;
@@ -52,11 +35,16 @@
 		top: 42px;
 		left: 10px;
 	}
+    .client_photo {
+        width: 100%;
+        margin-right: 20px;
+        min-width: 223px;
+	}
+    .faq_right_img img {
+        width: 90%;
+    }
 	.plan_item {
 		padding: 45px 35px;
-	}
-	.blog-area .col-md-6:nth-child(3){
-		margin-bottom: 0px;
 	}
 	.form-group {
 		margin-bottom: 0;
@@ -64,16 +52,10 @@
 	.footer_nav a {
 		margin-left: 8px;
 	}
-	.footer_nav a:nth-child(1),.footer_nav a:nth-child(8){
-		margin-left: 0;
-	}
 }
 
 @media (min-width:576px) and (max-width: 767px){
-	.sticky{
-		padding: 0px 20px;
-	}
-	.nav-item li a.active{
+	.nav-item a.active{
 		margin-left: 30px;
 	}
 	.navbar-collapse {
@@ -85,12 +67,6 @@
 	h1{
 		font-size: 61px;
 	}
-	.col-md-6, .col-md-12{
-		margin-bottom: 35px;
-	}
-	.col-md-6:last-child, .col-md-12:last-child{
-		margin-bottom: 0px;
-	}
 	.little_des {
 		width: 68%;
 		margin-left: 18%;
@@ -99,12 +75,14 @@
 		display: block !important;
 	}
 	.client_photo {
+        width: 100%;
 		margin-bottom: 50px;
+        margin-right: 0;
+        padding: 0 30px;
 	}
-	.client_photo img {
-		top: 6px;
-		left: 20px;
-	}
+    .clients-feedback-area .slick-arrow {
+        bottom: 55px;
+    }
 	.form-group {
 		text-align: center;
 	}
@@ -114,13 +92,13 @@
 	.plan-area .container .row{
 		justify-content: center;
 	}
+    .footer_top_inner {
+        text-align: center;
+    }
 }
 
 @media (min-width:480px) and (max-width: 575px){
-	.sticky{
-		padding: 0px 20px;
-	}
-	.nav-item li a.active{
+	.nav-item a.active{
 		margin-left: 30px;
 	}
 	h1, h2, h3, h4, h5, h6 {
@@ -135,12 +113,6 @@
 	.services_bg {
 		left: 50%;
 	}
-	.col-sm-6, .col-sm-10, .col-sm-12{
-		margin-bottom: 35px;
-	}
-	.col-sm-6:last-child, .col-sm-10:last-child, .col-sm-12:last-child{
-		margin-bottom: 0px;
-	}
 	.little_des {
 		width: 84%;
 		margin-left: 8%;
@@ -149,22 +121,20 @@
 		display: block !important;
 	}
 	.client_photo {
+        width: 100%;
 		margin-bottom: 50px;
+        margin-right: 0;
+        padding: 0 40px;
 	}
-	.client_photo img {
-		top: 6px;
-		left: 20px;
-	}
-	.col-sm-10, .col-sm-12{
-		padding-left: 35px;
-		padding-right: 35px;
-	}
+    .clients-feedback-area .slick-arrow {
+        bottom: 55px;
+    }
+    .footer_top_inner {
+        text-align: center;
+    }
 }
-@media (min-width:320px) and (max-width: 479px){
-	.sticky{
-		padding: 0 10px;
-	}
-	.nav-item li a.active{
+@media (min-width:359px) and (max-width: 479px){
+	.nav-item a.active{
 		margin-left: 30px;
 	}
 	h1{
@@ -174,18 +144,15 @@
 		padding-left: 40px;
 		padding-right: 40px;
 	}
-	.col-sm-6, .col-sm-10, .col-sm-12{
-		margin-bottom: 35px;
-	}
-	.col-sm-6:last-child, .col-sm-10:last-child, .col-sm-12:last-child{
-		margin-bottom: 0px;
-	}
 	.single_services {
 		text-align: center;
 	}
 	.services_bg {
 		left: 50%;
 	}
+    .area-title {
+        margin-bottom: 0;
+    }
 	.area-title h2 {
 		font-size: 36px;
 		line-height: 1.3;
@@ -200,6 +167,14 @@
 	.theme_video img {
 		min-height: 310px;
 	}
+    
+   section{
+        padding-top: 35px !important;
+        padding-bottom: 25px !important;
+    }
+    .contact-area{
+        padding-bottom: 0;
+    }
 	.clients-feedback-area .feedback-slider .d-flex{
 		display: block !important;
 	}
@@ -207,10 +182,15 @@
 		min-height: 234px;
 		margin-bottom: 35px;
 	}
-	.client_photo img{
-		top: 10px;
-		left: 9px;
+	.client_photo {
+        width: 100%;
+		margin-bottom: 30px;
+        margin-right: 0;
+        padding: 0 30px;
 	}
+    .clients-feedback-area .slick-arrow {
+        bottom: 55px;
+    }
 	.download_inner h2 {
 		font-size: 34px;
 		line-height: 1.3;
@@ -231,6 +211,9 @@
 	.contact_link a:last-child {
 		margin-bottom: 0px;
 	}
+    .footer_top_inner {
+        text-align: center;
+    }
 	.footer_copyright_inner {
 		display: block;
 		text-align: center;
@@ -242,12 +225,3 @@
 		 float: left !important; 
 	}
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
